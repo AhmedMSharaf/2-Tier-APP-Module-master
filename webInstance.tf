@@ -48,7 +48,7 @@ resource "aws_instance" "my-instance" {
 
   subnet_id =  aws_subnet.create-subnet["public-subnet"].id
 
-  key_name = "test-keypair.pem"
+  key_name = "test-keypair"
   
 #   the instance name 
   tags = {
